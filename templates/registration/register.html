@@ -1,0 +1,28 @@
+{% extends 'myquizapi/pager.html' %}
+
+{% block content %}
+
+<center>
+    <div class="w3-third" style="margin-left: 30%;">
+        <h2>System Signup</h2>
+                <div class="w3-card-4">
+                    <form class="w3-container w3-center" action="" method="POST">
+                            {% csrf_token %}
+
+                            {{ form.as_p }}
+
+  
+  <button class="w3-button w3-block w3-dark-grey" value="submit">Create Account</button>
+  <br><br>
+</form>
+                </div>
+            </div>
+</center>
+{% endblock%}
+
+	
+
+
+
+</body>
+</html> 

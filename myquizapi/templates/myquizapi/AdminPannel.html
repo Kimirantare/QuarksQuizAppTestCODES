@@ -1,0 +1,133 @@
+{% extends 'myquizapi/pager.html' %}
+{% load static %}
+{% block content %}
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                  <div class="container-fluid">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">My Quiz Web</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link " href="#">Log Out</a>
+                      </li>
+
+                    </ul>
+                  </div>
+            </nav>
+<br>
+<h4>Welcome to Admin Pannel</h4>
+<br>
+
+<div class="w3-container">
+
+
+<div class="w3-grey w3-section" style="width:75%">
+  <button onclick="myFunction('Demo1')" class="w3-button w3-block">
+  <span class="w3-tag  w3-white" style="height: 40px;"><h3 style="margin-top: 2%;">List Quiz</span>
+  </button>
+  <div id="Demo1" class="w3-hide w3-container">
+    <p>Recently Posted Quizes</p>
+     <table class="w3-table">
+    <tr>
+      <th>Quiz ID</th>
+      <th>Quiz Name</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Math</td>
+      <td><button class="w3-button w3-black">Edit Quiz</button></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Math</td>
+      <td><button class="w3-button w3-black">Edit Quiz</button></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Math</td>
+      <td><button class="w3-button w3-black">Edit Quiz</button></td>
+    </tr>
+
+  </table>
+  </div>
+</div>
+
+<div class="w3-dark-grey w3-section" style="width:75%">
+  <button onclick="myFunction('Demo2')" class="w3-button w3-block">
+
+<span class="w3-tag  w3-white" style="height: 40px;"><h3 style="margin-top: 2%;">List Quiz Results</></span>
+ </button>
+  <div id="Demo2" class="w3-hide w3-container">
+    <p>Recently Done Quiz Results</p>
+
+     <table class="w3-table">
+    <tr>
+      <th>Quiz ID</th>
+      <th>Quiz Name</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Math</td>
+      <td><button class="w3-button w3-black">View Deatails</button></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Math</td>
+      <td><button class="w3-button w3-black">View Details</button></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Math</td>
+      <td><button class="w3-button w3-black">View Details</button></td>
+    </tr>
+
+  </table>
+  </div>
+</div>
+
+<div class="w3-light-grey w3-section" style="width:75%">
+  <button onclick="myFunction('Demo3')" class="w3-button w3-block">
+  <span class="w3-tag  w3-white" style="height: 40px;"><h3 style="margin-top: 2%;">Manage Users</span>
+  </button>
+  <div id="Demo3" class="w3-hide w3-container">
+    <p>View all Students</p>
+
+     <table class="w3-table">
+    <tr>
+      <th>Quiz ID</th>
+      <th>Quiz Name</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Math</td>
+      <td><button class="w3-button w3-black">Delete Student</button></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Math</td>
+      <td><button class="w3-button w3-black">Delete Student</button></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Math</td>
+      <td><button class="w3-button w3-black">Delete Student</button></td>
+    </tr>
+
+  </table>
+  </div>
+</div>
+
+
+
+</div>
+
+<script src="{% static 'accordions.js' %}"></script>
+{% endblock %}
+
+
+
+

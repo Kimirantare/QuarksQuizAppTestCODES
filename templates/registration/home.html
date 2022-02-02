@@ -1,0 +1,25 @@
+{% extends 'myquizapi/pager.html' %}
+{% load static %}
+
+{% block content %}
+	 <div class="w3-bar w3-black">
+         <a href="#" class="w3-bar-item w3-button"><h3>My Quiz</h3></a>
+     </div>
+
+<div class="container w3-card-4" style="background-image:url({% static 'images/quiz1.jpg' %});
+ background-repeat: none!important;height:75%;">
+<center>
+    <br>
+    <p style="margin-top:100px;"><br><br>
+        <h1>Welcome to My Quiz Web Application.</h1>
+    </p>
+    <p>
+        <a href="./My_Quiz_web_app_signup"><button class="w3-button w3-dark-grey">Create Account</button></a>
+        <a href="./My_Quiz_web_app_login"><button class="w3-button w3-dark-grey">Login </button></a>
+    </p>
+    <br>
+
+</center>
+</div>
+
+{% endblock %}
